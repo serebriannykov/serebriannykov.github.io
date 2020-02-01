@@ -18,7 +18,7 @@ a {
 .container {
 	width: 100%;
 	max-width: 1024px;
-	padding: 0 10px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 main {
@@ -138,6 +138,18 @@ header:before {
 	font-size: 18px;
 	color: #000;
 }
+.button-sign-in {
+	margin-left: 10px;
+	background: #f6f5f4;
+	border-radius: 5px;
+}
+.button-sign-in span {
+	/* color: #ffcc01; */
+}
+.button-sign-in i {
+	margin: 0 auto;
+	/* color: #ffcc01; */
+}
 
 /*******				SWIPER				*******/
 
@@ -195,7 +207,7 @@ header:before {
 }
 .stats-row {
 	display: flex;
-	margin: 0 auto;
+	justify-content: center;
 }
 .stats-item {
 	display: flex;
@@ -223,7 +235,7 @@ header:before {
 }
 .buttons-search form {
 	position: relative;
-	width: 300px;
+	max-width: 300px;
 }
 .buttons-search input[type=text] {
 	width: 100%;
@@ -411,15 +423,19 @@ footer {
 	font-size: 2.5em;
 }
 .footer-logo h4 {
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 .footer-follow-us {
 	margin-top: 20px;
+	text-align: center;
+}
+.footer-follow-us h4 {
+	font-size: 1.2em;
 }
 .footer-follow-us form {
 	position: relative;
-	width: 300px;
-	margin-top: 10px;
+	max-width: 300px;
+	margin: 10px auto 0 auto;
 	background: #f6f5f4;
 	border-bottom: 4px solid #aaa;
 }
@@ -449,6 +465,13 @@ footer {
 }
 .footer-contact {
 	margin-top: 20px;
+	text-align: center;
+}
+.footer-contact h4 {
+	font-size: 1.2em;
+}
+.footer-contact span {
+	font-weight: bold;
 }
 footer hr {
 	margin-top: 40px;
@@ -462,7 +485,7 @@ footer hr {
 }
 .footer-nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding-bottom: 20px;
 	margin-top: 20px;
 } 
@@ -490,6 +513,13 @@ footer hr {
 }
 
 /*******				MEDIA QUERIES				*******/
+
+@media (max-width: 350px) {
+	/*******				FOOTER				*******/
+	.footer-links {
+		font-size: .8em;
+	}
+}
 
 @media (min-width: 768px) {
 	main {
@@ -529,6 +559,7 @@ footer hr {
 	.list {
 		display: flex;
 		position: relative;
+		align-items: center;
 		z-index: 3;
 	}
 	.list li {
@@ -541,8 +572,10 @@ footer hr {
 		transform: scale(1.1);
 		transition: transform linear .3s;
 	}
-	.button-sign-in i {
-		margin-left: 5px;
+	.button-sign-in {
+		margin-left: 10px;
+		background: #ffcc01;
+		border-radius: 5px;
 	}
 	/***		SWIPER		***/
 	.swiper-container {
@@ -632,6 +665,9 @@ footer hr {
 	.agent-card:hover {
 		box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 	}
+	.agent-social-icons i:hover {
+		color: #ffcc01;
+	}
 	/*******				FOOTER				*******/
 	.footer-row {
 		display: flex;
@@ -642,6 +678,12 @@ footer hr {
 	}
 	.footer-col {
 		width: 50%;
+	}
+	.footer-follow-us form {
+		width: 300px;
+	}
+	.footer-contact {
+		text-align: left;
 	}
 	.footer-nav {
 		justify-content: space-between;
