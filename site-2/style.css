@@ -19,8 +19,8 @@ a {
 }
 .container {
 	width: 100%;
-	max-width: 1080px;
-	padding: 0 10px;
+	max-width: 1024px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 .row {

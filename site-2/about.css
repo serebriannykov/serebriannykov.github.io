@@ -22,7 +22,7 @@
 		width: 100%;
 	}
 	.post h1 {
-		font-size: 32px;
+		font-size: 24px;
 		width: 70%;
 		padding: 10px 20px;
 		margin: 0;
@@ -32,5 +32,11 @@
 		background: #19121e;
 		position: absolute;
 		z-index: 2;
+	}
+}
+
+@media (min-width: 1024px) {
+	.post h1 {
+		font-size: 32px;
 	}
 }

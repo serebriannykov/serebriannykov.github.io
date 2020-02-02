@@ -1,6 +1,6 @@
 .post {
 	margin-top: 30px;
-	margin-bottom: 30px;
+	/*margin-bottom: 50px;*/
 }
 .post-image img {
 	width: 100%;
@@ -45,10 +45,21 @@ time:after, .author:after {
 	line-height: 1.5;
 	margin-bottom: 10px;
 }
+.post-content p:nth-last-of-type(1) {
+	margin-bottom: 30px;
+}
+.post-separator {
+	width: 40%;
+	border-bottom: 2px solid #a1787e;
+	margin: 0 auto;
+}
 
 @media (min-width: 768px) {
 	main .container {
 		padding-left: 50px;
+	}
+	.post {
+		margin-top: 40px;
 	}
 	.post-image img {
 		float: right;
@@ -67,6 +78,12 @@ time:after, .author:after {
 	}
 	.post-meta {
 		font-size: 16px;
+	}
+	.post-content p:nth-last-of-type(1) {
+		margin-bottom: 40px;
+	}
+	.post-separator {
+		width: 30%;
 	}
 	footer {
 		clear: both;
